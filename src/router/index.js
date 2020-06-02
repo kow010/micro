@@ -1,6 +1,5 @@
 import React from 'react';
-import {Image} from 'react-native';
-import {CommonActions, StackActions} from '@react-navigation/native';
+import {CommonActions} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {PATH_AUTH, PATH_AUTH_INTRO, PATH_SPLASH} from './paths';
 import Splash from '../pages/Splash';

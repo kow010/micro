@@ -1,12 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, Image, StyleSheet, Alert} from 'react-native';
+import {View, Image} from 'react-native';
 import {Container, Content} from 'native-base';
-import Touchable from '../../components/Touchable';
 // import {EmailLogin, KakaoLogin, NaverLoginButton} from '../../components/LoginButton';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
-const Intro = props => {
+const Intro = () => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
       <Container style={{}}>
