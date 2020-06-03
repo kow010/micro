@@ -3,7 +3,4 @@
 팀: 송지훈(팀장), 김재훈, 이호진, 김경남, 김강현
 
 ### Demo App
-![image](img_splash.png)
-
-
 ![image](img_intro.png)
