@@ -9,6 +9,7 @@ import WhiteSafeAreaView from "../../components/WhiteSafeAreaView";
 const Intro = () => {
     const [temperature, setTemperature] = useState(null);
 
+
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: '#fafafa'}}>
             <Container style={{marginHorizontal: 16}}>
