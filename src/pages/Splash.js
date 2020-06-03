@@ -2,7 +2,6 @@
 import React, {useEffect} from 'react';
 import {View, Image} from 'react-native';
 import WhiteSafeAreaView from '../components/WhiteSafeAreaView';
-import {withAuthContext} from '../context/AuthContext';
 import {resetNavigation} from '../router';
 import {PATH_AUTH} from '../router/paths';
 
@@ -10,7 +9,7 @@ const Splash = props => {
   useEffect(() => {
     setTimeout(() => {
       resetNavigation(props.navigation, PATH_AUTH);
-    }, 1000);
+    }, 1500);
   }, [props.navigation]);
 
   return (
@@ -19,10 +18,10 @@ const Splash = props => {
         style={{
           justifyContent: 'center',
           alignItems: 'center',
-          paddingTop: 315,
+          paddingTop: 150,
         }}>
         <Image
-          style={{width: 154, height: 55}}
+          style={{width: 173, height: 152}}
           source={require('../images/logo_splash.png')}
           resizeMode={'contain'}
         />
@@ -31,4 +30,4 @@ const Splash = props => {
   );
 };
 
-export default withAuthContext(Splash);
+export default Splash;

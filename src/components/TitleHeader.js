@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useEffect} from 'react';
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import {View, Text, TouchableOpacity, Image, Linking} from 'react-native';
 import {Icon} from 'native-base';
 import Touchable from './Touchable';
 
@@ -13,74 +13,47 @@ const TitleHeader = props => {
         flexDirection: 'row',
         backgroundColor: props.transParent ? 'transparent' : '#fff',
         alignItems: 'center',
-        paddingHorizontal: 17,
+        paddingHorizontal: 25,
         paddingVertical: 13,
         borderBottomWidth: props.borderBottomLine && 1,
         borderBottomColor: props.borderBottomLine && '#f0f0f0',
       }}>
       <View style={{flex: 0.1}}>
-        {!!props.onBack && (
-          <TouchableOpacity onPress={props.onBack}>
+        {!!props.call && (
+          <TouchableOpacity
+              onPress={props.call}>
             <Icon
-              type={'AntDesign'}
-              name={'left'}
-              style={{fontSize: 24, color: '#404040'}}
+              type={'Feather'}
+              name={'phone-call'}
+              style={{fontSize: 24, color: '#34558b'}}
             />
-          </TouchableOpacity>
-        )}
-        {props.screenHome ? (
-          <Touchable onPress={props.leftIconPress} style={{paddingTop: 10}}>
-            <Image
-              style={{width: 24, height: 24}}
-              source={props.leftIcon}
-              resizeMode={'contain'}
-            />
-          </Touchable>
-        ) : null}
+          </TouchableOpacity>)}
       </View>
       <View style={{flex: 1}}>
-        {!!props.titleLogo && (
-          <View style={{justifyContent: 'center', alignItems: 'center'}}>
-            <Image
-              style={{width: 98, height: 35}}
-              source={props.titleLogo}
-              resizeMode={'contain'}
-            />
-          </View>
-        )}
         {!!props.title && (
           <View style={{justifyContent: 'center', alignItems: 'center'}}>
             <Text
               style={{
                 fontSize: 20,
                 lineHeight: 29,
-                color: '#404040',
+                color: '#34558b',
                 textAlign: 'center',
+                  fontWeight: 'bold',
               }}>
               {props.title}
             </Text>
-          </View>
-        )}
+          </View>)}
       </View>
       <View style={{flex: 0.1}}>
-        {!!props.titleLogo && (
-          <Touchable onPress={props.onFilterPress} style={{paddingTop: 8}}>
-            <Image
-              style={{width: 24, height: 24}}
-              source={props.filter}
-              resizeMode={'contain'}
-            />
-          </Touchable>
-        )}
-        {!!props.close && (
-          <Touchable onPress={props.pageBack}>
+        {!!props.onRightPress && (
+          <Touchable
+              onPress={props.onRightPress}>
             <Icon
               type={'AntDesign'}
-              name={props.close}
-              style={{fontSize: 28, color: '#A59beb'}}
+              name={'search1'}
+              style={{fontSize: 28, color: '#34558b'}}
             />
-          </Touchable>
-        )}
+          </Touchable>)}
       </View>
     </View>
   );
