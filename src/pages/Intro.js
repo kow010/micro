@@ -2,9 +2,9 @@
 import React, {useState, useEffect} from 'react';
 import {View, Image, Text, Linking, SafeAreaView} from 'react-native';
 import {Container, Content, Card} from 'native-base';
-import Touchable from '../../components/Touchable';
-import TitleHeader from '../../components/TitleHeader';
-import WhiteSafeAreaView from '../../components/WhiteSafeAreaView';
+import Touchable from '../components/Touchable';
+import TitleHeader from '../components/TitleHeader';
+import WhiteSafeAreaView from '../components/WhiteSafeAreaView';
 
 const Intro = () => {
   const [temperature, setTemperature] = useState(null);
@@ -37,7 +37,7 @@ const Intro = () => {
                 justifyContent: 'center',
               }}>
               <Image
-                source={require('../../images/logo_splash.png')}
+                source={require('../images/logo_splash.png')}
                 style={{width: 173, height: 152}}
                 resizeMode={'contain'}
               />

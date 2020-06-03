@@ -3,12 +3,12 @@ import React, {useEffect} from 'react';
 import {View, Image} from 'react-native';
 import WhiteSafeAreaView from '../components/WhiteSafeAreaView';
 import {resetNavigation} from '../router';
-import {PATH_AUTH} from '../router/paths';
+import {PATH_AUTH, PATH_MAIN} from '../router/paths';
 
 const Splash = props => {
   useEffect(() => {
     setTimeout(() => {
-      resetNavigation(props.navigation, PATH_AUTH);
+      resetNavigation(props.navigation, PATH_MAIN);
     }, 1500);
   }, [props.navigation]);
 

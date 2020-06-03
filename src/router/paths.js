@@ -1,3 +1,4 @@
-export const PATH_AUTH = 'Auth';
-export const PATH_AUTH_INTRO = 'AuthIntro';
+export const PATH_MAIN = 'Main';
+export const PATH_MAIN_HOME = 'Home';
+export const PATH_MAIN_INTRO = 'Intro';
 export const PATH_SPLASH = 'Splash';
