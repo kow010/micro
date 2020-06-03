@@ -8,16 +8,6 @@ import {PATH_AUTH} from '../router/paths';
 
 const Splash = props => {
   useEffect(() => {
-    // api.get('v1/users/sign-out/');
-    // props.auth.fetchProfile().then(ok=>{
-    //     let resetPage = PATH_MAIN;
-    //     console.log(ok);
-    //     if(!ok){resetPage = PATH_AUTH}
-    //
-    //     setTimeout(()=>{
-    //         resetNavigation(props.navigation, resetPage)
-    //     }, 1000);
-    // });
     setTimeout(() => {
       resetNavigation(props.navigation, PATH_AUTH);
     }, 1000);
