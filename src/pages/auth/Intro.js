@@ -16,7 +16,7 @@ const Intro = () => {
                              call={()=>{Linking.openURL(`tel:010-2862-7045`)}}
                              onRightPress={()=>Linking.openURL('https://www.arduino.cc/reference/en')}/>
                 <Content>
-                    <Card style={{padding: 16, marginTop: 30}}>
+                    <Card style={{padding: 16, marginTop: 30, paddingBottom: 40, borderRadius: 10}}>
                     <View
                         style={{
                             paddingTop: 30,
