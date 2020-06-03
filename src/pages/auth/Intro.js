@@ -16,7 +16,7 @@ const Intro = () => {
                              call={()=>{Linking.openURL(`tel:010-2862-7045`)}}
                              onRightPress={()=>Linking.openURL('https://www.arduino.cc/reference/en')}/>
                 <Content>
-                    <Card style={{padding: 16, marginTop: 30, paddingBottom: 40, borderRadius: 10}}>
+                    <Card style={{padding: 16, marginTop: 10, paddingTop: 10, paddingBottom: 100, borderRadius: 10}}>
                     <View
                         style={{
                             paddingTop: 30,
@@ -27,10 +27,10 @@ const Intro = () => {
                             source={require('../../images/logo_splash.png')}
                             style={{width: 173, height: 152}}
                             resizeMode={'contain'}
-                        />
+                        />ㅎ
                     </View>
                     <View style={{justifyContent: 'center', alignItems: 'center', backgroundColor: '#e5f0ff', borderRadius: 3, paddingVertical: 20,
-                        paddingHorizontal: 20, marginTop: 30,
+                        paddingHorizontal: 20, marginTop: 40,
                     }}>
                         <Text style={{textAlign: 'center', fontSize: 24, lineHeight: 35, color: '#34558b'}}>
                             {temperature ? temperature : '온도'}

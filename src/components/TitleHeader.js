@@ -13,8 +13,8 @@ const TitleHeader = props => {
         flexDirection: 'row',
         backgroundColor: props.transParent ? 'transparent' : '#fff',
         alignItems: 'center',
-        paddingHorizontal: 25,
-        paddingVertical: 13,
+        paddingHorizontal: 20,
+        paddingVertical: 20,
         borderBottomWidth: props.borderBottomLine && 1,
         borderBottomColor: props.borderBottomLine && '#f0f0f0',
       }}>
