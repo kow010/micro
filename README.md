@@ -7,4 +7,4 @@
 
 
 ### Final Project Demo / App
-![image](img_intro.png)
+![image](img_final_project.png)
