@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState, useEffect} from 'react';
-import {View, Image, Text, Linking} from 'react-native';
+import {View, Image, Text, Linking, SafeAreaView} from 'react-native';
 import {Container, Content, Card} from 'native-base';
 import Touchable from '../../components/Touchable';
 import TitleHeader from "../../components/TitleHeader";
@@ -10,7 +10,7 @@ const Intro = () => {
     const [temperature, setTemperature] = useState(null);
 
     return (
-        <WhiteSafeAreaView>
+        <SafeAreaView style={{flex: 1, backgroundColor: '#fafafa'}}>
             <Container style={{marginHorizontal: 16}}>
                 <TitleHeader title={'마이크로컨트롤러 4조'}
                              call={()=>{Linking.openURL(`tel:010-2862-7045`)}}
@@ -27,7 +27,7 @@ const Intro = () => {
                             source={require('../../images/logo_splash.png')}
                             style={{width: 173, height: 152}}
                             resizeMode={'contain'}
-                        />ㅎ
+                        />
                     </View>
                     <View style={{justifyContent: 'center', alignItems: 'center', backgroundColor: '#e5f0ff', borderRadius: 3, paddingVertical: 20,
                         paddingHorizontal: 20, marginTop: 40,
@@ -66,7 +66,7 @@ const Intro = () => {
                     </Card>
                 </Content>
             </Container>
-        </WhiteSafeAreaView>
+        </SafeAreaView>
     );
 };
 
